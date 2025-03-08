@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="regis">Registration Form</h1>
+    <div id="regform">
+        <p class="data">(Please fill out this form with the required information.)</p>
+        <form method="post">
+          <fieldset>
+            <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+            <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+            <label for="college">Enter Your College: <input id="college" name="college" type="text" required /></label>
+            <label for="year">Enter Your Year of Graduation: <input id="year" name="year" type="year" required /></label>
+          </fieldset>
+          <fieldset>
+            <label for="terms-and-conditions">
+              <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            </label>
+          </fieldset>
+          <fieldset>
+            <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+            <label for="age">Input your age (years): <input id="age" type="number" name="age" min="17" max="30" /></label>
+            <label for="contact">Input your Contact Number: <input id="contact" name="contact"/></label>
+            <label for="eventname">Select the event you want to participate in?
+              <select id="event" name="event">
+                <option value="">(select one)</option>
+                <option value="1">Singing Competition</option>
+                <option value="2">Dance Competition</option>
+                <option value="3">Sketch Competition</option>
+                <option value="4">T-shirt Painting</option>
+                <option value="5">No-Heat Cooking Competition</option>
+                <option value="6">Baking Competition</option>
+                <option value="7">Hackathon</option>
+                <option value="8">BrainERA</option>
+                <option value="9">Bug-Find Competition</option>
+                <option value="10">Photography Competition</option>
+                <option value="11">Video Editing Competition</option>
+                <option value="12">Photo Editing Competition</option>
+              </select>
+              <p class="fee">Registration fee for each event is Rs. 200/-.<br>Fill the form again for each event you wish to participate in.</p>
+            </label>
+          </fieldset>
+          <input type="submit" value="Submit" />
+        </div>
+</body>
+</html>
